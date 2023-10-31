@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="d-flex justify-content-center">
+    <div class="container-sm p-3 m-5 border smaller-container">
+      <h1>Bé tập tính</h1>
+      <div class="row">
+        <!--Input Form-->
+        <div class="col-8">
+          <div class="row">
+            <form>
+              <div class="form-group row p-1">
+                <label for="inputPassword" class="col-3 col-form-label"
+                  >Số thứ nhất
+                </label>
+                <div class="col-9">
+                  <input
+                    class="form-control"
+                    id="number-first"
+                    name="Số thứ nhất"
+                  />
+                </div>
+              </div>
+              <div class="form-group row p-1">
+                <label for="inputPassword" class="col-3 col-form-label"
+                  >Số thứ hai
+                </label>
+                <div class="col-9">
+                  <input
+                    class="form-control"
+                    id="number-second"
+                    name="Số thứ hai"
+                  />
+                </div>
+              </div>
+              <div class="form-group row p-1">
+                <label for="inputPassword" class="col-3 col-form-label"
+                  >Kết quả
+                </label>
+                <div class="col-9">
+                  <input
+                    id="result"
+                    class="form-control"
+                    type="text"
+                    readonly
+                  />
+                </div>
+              </div>
+            </form>
+            <div class="row">
+              <label for="inputPassword" class="col-3 col-form-label">
+                Thông báo
+              </label>
+              <div class="col-9">
+                <p id="msg" class="message p-2"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Buttons-->
+        <div class="col-4">
+          <!--Add-Sub-->
+          <div class="row p-2">
+            <div class="col-4">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="math"
+                id="add"
+                value="add"
+                checked
+              />
+              <label class="form-check-label" for="add"> Cộng </label>
+            </div>
+            <div class="col-4">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="math"
+                id="sub"
+                value="sub"
+              />
+              <label class="form-check-label" for="sub"> Trừ </label>
+            </div>
+          </div>
+          <!--Mult-Div-->
+          <div class="row p-2">
+            <div class="col-4">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="math"
+                id="mult"
+                value="mult"
+              />
+              <label class="form-check-label" for="mult"> Nhân </label>
+            </div>
+            <div class="col-4">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="math"
+                id="div"
+                value="div"
+              />
+              <label class="form-check-label" for="div"> Chia </label>
+            </div>
+          </div>
+          <div class="row p-2">
+            <div class="col-6">
+              <button
+                id="calculate-button"
+                type="button"
+                class="btn btn-primary"
+              >
+                Tính
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+
+    <script src="" async defer></script>
+  </body>
+</html>
